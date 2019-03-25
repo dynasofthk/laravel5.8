@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title> {{ config('app.name')}}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,9 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
-                </div>
 
+                  {{ config('app.name')}}
+                  {{ App::Version() }} {{ date("H:i:s") }}
+                </div>
+                
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
